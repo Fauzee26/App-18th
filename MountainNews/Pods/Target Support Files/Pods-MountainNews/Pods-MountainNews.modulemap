@@ -1,0 +1,6 @@
+framework module Pods_MountainNews {
+  umbrella header "Pods-MountainNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
