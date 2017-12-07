@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Bodoni72-Book-SmallCaps.ttf">
+            <string>BodoniSvtyTwoSCITCTT-Book</string>
+        </array>
         <array key="ChalkboardSE.ttc">
             <string>ChalkboardSE-Regular</string>
         </array>
@@ -18,6 +21,9 @@
         </array>
         <array key="Menlo.ttc">
             <string>Menlo-Regular</string>
+        </array>
+        <array key="Palatino.ttc">
+            <string>Palatino-Roman</string>
         </array>
     </customFonts>
     <scenes>
@@ -207,20 +213,93 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Hlc-74-Vc9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LOQ-i9-4TH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="rGf-e1-NAk" kind="relationship" relationship="viewControllers" id="bkm-sB-3V9"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Xl4-pK-b4g"/>
+                        <segue destination="d75-q9-JKr" kind="relationship" relationship="viewControllers" id="8tX-rE-WMd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NuL-JX-yaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-163.19999999999999" y="133.13343328335833"/>
         </scene>
+        <!--Developer-->
+        <scene sceneID="2jB-3O-Y6X">
+            <objects>
+                <viewController id="d75-q9-JKr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjH-hn-SCy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Is-1J-2TW">
+                                <rect key="frame" x="16" y="36" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3rT-e9-r5j"/>
+                                    <constraint firstAttribute="height" constant="60" id="vOP-Vf-3P0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mountain News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4O-n5-T4h">
+                                <rect key="frame" x="36" y="371" width="302" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version 1.1 (017.12)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJu-Gd-CMN">
+                                <rect key="frame" x="16" y="425" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3f2cac9449a419a431fcab91cefa6f8e" translatesAutoresizingMaskIntoConstraints="NO" id="e2t-zQ-SU1">
+                                <rect key="frame" x="16" y="147" width="343" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jo-94-jtx">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Main Menu" id="0kn-Q5-2ao">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1M-WR-30x">
+                                <rect key="frame" x="16" y="481" width="343" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Copyright © 2017, Fauzee Corp.
+ All Rights Reserved.</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Is-1J-2TW" firstAttribute="leading" secondItem="r0B-Pp-OWm" secondAttribute="leading" constant="16" id="PmM-Ux-3mn"/>
+                            <constraint firstItem="4Is-1J-2TW" firstAttribute="top" secondItem="r0B-Pp-OWm" secondAttribute="top" constant="16" id="mDm-Dc-ERH"/>
+                            <constraint firstItem="r0B-Pp-OWm" firstAttribute="trailing" secondItem="4Is-1J-2TW" secondAttribute="trailing" constant="16" id="zH5-jp-9fa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r0B-Pp-OWm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Developer" image="manager" selectedImage="manager" id="BYU-1x-4fr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMh-dW-o6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="856"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="3f2cac9449a419a431fcab91cefa6f8e" width="667" height="354"/>
+        <image name="manager" width="24" height="24"/>
         <image name="photo-interface-symbol-with-mountains-landscape" width="24" height="24"/>
         <image name="placeholder-filled-point" width="24" height="24"/>
     </resources>
